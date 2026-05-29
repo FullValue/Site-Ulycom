@@ -34,12 +34,12 @@ const PROJECTS_DATA: Project[] = [
 
 export function Projects() {
   return (
-    <section id="work" className="py-24 px-6 max-w-[1240px] mx-auto overflow-hidden relative z-10">
-      <div className="mb-20">
+    <section id="work" className="py-20 sm:py-24 px-4 sm:px-6 max-w-[1240px] mx-auto overflow-hidden relative z-10">
+      <div className="mb-14 sm:mb-20">
         <p className="text-xs uppercase tracking-[0.2em] text-white/50 font-mono mb-4">
           — ARCHIVES ET REALISATIONS
         </p>
-        <h2 className="text-4xl md:text-5xl font-sans font-medium tracking-tight text-white leading-none">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-sans font-medium tracking-tight text-white leading-tight">
           Des structures nées pour{" "}
           <span className="font-serif italic text-white/80 font-normal">redéfinir l'espace</span>.
         </h2>

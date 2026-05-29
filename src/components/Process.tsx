@@ -38,7 +38,7 @@ export function Process() {
   const { ref, className } = useInView(0.05);
 
   return (
-    <section id="process" className="py-24 px-6 relative z-10">
+    <section id="process" className="py-20 sm:py-24 px-4 sm:px-6 relative z-10">
       <div className="max-w-7xl mx-auto">
         
         <div ref={ref as any} className={`text-center max-w-2xl mx-auto mb-20 ${className}`}>
@@ -60,7 +60,7 @@ export function Process() {
             return (
               <div
                 key={index}
-                className="liquid-glass p-8 flex flex-col justify-between h-84 rounded-2xl relative hover:scale-[1.02] transition-transform duration-500Group"
+                className="liquid-glass p-7 sm:p-8 flex flex-col justify-between min-h-[20rem] rounded-2xl relative hover:scale-[1.02] transition-transform duration-500"
               >
                 <div>
                   <div className="flex justify-between items-start mb-8">

@@ -6,12 +6,12 @@ export function Pricing() {
   const { ref, className } = useInView(0.05);
 
   const handleCTA = () => {
-    alert("Démarrage du processus de souscription Bloom AI. Redirection vers la passerelle sécurisée intégrée...");
+    alert("Démarrage du processus de souscription Ulycom. Redirection vers la passerelle sécurisée intégrée...");
   };
 
   return (
-    <section id="pricing" className="py-24 px-6 relative z-10">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+    <section id="pricing" className="py-20 sm:py-24 px-4 sm:px-6 relative z-10">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
         
         {/* Intro text column */}
         <div ref={ref as any} className={`lg:col-span-4 ${className}`}>

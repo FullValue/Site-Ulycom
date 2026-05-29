@@ -7,7 +7,7 @@ const TESTIMONIALS: Testimonial[] = [
     name: "Arthur de Saint-Exupéry",
     role: "Directeur de l'Innovation",
     company: "Verde Architecture",
-    text: "La technologie Bloom de sculpture végétale s'est intégrée parfaitement à nos façades cinétiques ruelle-verte à Lyon. Le réalisme procédural est fantastique.",
+    text: "La technologie Ulycom de sculpture végétale s'est intégrée parfaitement à nos façades cinétiques ruelle-verte à Lyon. Le réalisme procédural est fantastique.",
     avatar: "https://picsum.photos/seed/arthur/120/120",
   },
   {
@@ -21,14 +21,14 @@ const TESTIMONIALS: Testimonial[] = [
     name: "Thomas Gressier",
     role: "Directeur Technique",
     company: "Aether Metaspace",
-    text: "Le rendu de croissance temps réel est sidérant. Nos métamodèles 3D s'interfacent avec une rapidité incroyable grâce à l'exportation optimisée de Bloom.",
+    text: "Le rendu de croissance temps réel est sidérant. Nos métamodèles 3D s'interfacent avec une rapidité incroyable grâce à l'exportation optimisée d'Ulycom.",
     avatar: "https://picsum.photos/seed/thomas_b/120/120",
   },
   {
     name: "Emma Bodin",
     role: "VP Expérience",
     company: "Hôtel L'Eden",
-    text: "Nous cherchions une installation immersive hybride qui mélange nature réelle et technologie interactive. Bloom s'est imposé comme l'excellence absolue sur le marché.",
+    text: "Nous cherchions une installation immersive hybride qui mélange nature réelle et technologie interactive. Ulycom s'est imposé comme l'excellence absolue sur le marché.",
     avatar: "https://picsum.photos/seed/emma_b/120/120",
   },
 ];
@@ -61,16 +61,16 @@ export function TestimonialCarousel() {
 
   return (
     <section 
-      className="py-24 relative z-10 overflow-hidden"
+      className="py-20 sm:py-24 relative z-10 overflow-hidden"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
     >
-      <div className="max-w-7xl mx-auto px-6 mb-16 flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 mb-12 sm:mb-16 flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
         <div>
           <p className="text-xs uppercase tracking-[0.2em] text-white/50 font-mono mb-4">
             — PAROLES DE DESIGNERS
           </p>
-          <h2 className="text-4xl md:text-5xl font-sans font-medium tracking-tight text-white leading-tight">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-sans font-medium tracking-tight text-white leading-tight">
             Validé par les{" "}
             <span className="font-serif italic text-white/80 font-normal">esprits créatifs</span> les plus exigeants.
           </h2>
@@ -90,7 +90,7 @@ export function TestimonialCarousel() {
       </div>
 
       {/* Slide Container Area */}
-      <div className="relative max-w-7xl mx-auto px-6 h-[400px] flex items-center justify-center">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 h-[500px] sm:h-[430px] md:h-[400px] flex items-center justify-center">
         {/* Navigation Buttons floating in Glass */}
         <button
           onClick={prevSlide}
@@ -127,7 +127,7 @@ export function TestimonialCarousel() {
                 >
                   <div
                     className={`
-                      w-full max-w-3xl p-8 md:p-12 rounded-3xl liquid-glass select-none
+                      w-full max-w-3xl p-6 sm:p-8 md:p-12 rounded-3xl liquid-glass select-none
                       transition-all duration-500
                       ${active ? "opacity-100 scale-100" : "opacity-30 scale-95 pointer-events-none"}
                     `}

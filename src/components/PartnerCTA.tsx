@@ -88,12 +88,12 @@ export function PartnerCTA() {
   return (
     <section 
       ref={animRef as any}
-      className={`py-12 px-6 max-w-7xl mx-auto overflow-hidden relative z-10 ${animClass}`}
+      className={`py-12 px-4 sm:px-6 max-w-7xl mx-auto overflow-hidden relative z-10 ${animClass}`}
     >
       <div
         ref={containerRef}
         onMouseMove={handleMouseMove}
-        className="w-full py-32 md:py-40 px-8 rounded-3xl text-center flex flex-col items-center justify-center relative liquid-glass-strong cursor-crosshair select-none overflow-hidden"
+        className="w-full py-24 sm:py-32 md:py-40 px-6 sm:px-8 rounded-3xl text-center flex flex-col items-center justify-center relative liquid-glass-strong cursor-crosshair select-none overflow-hidden"
       >
         {/* Spawn Vignette renders */}
         {vignettes.map((v) => (
