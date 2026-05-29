@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;1,8..60,400;1,8..60,500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Poppins", "Helvetica Neue", Arial, sans-serif;
+  --font-serif: "Source Serif 4", "Times New Roman", serif;
+  --radius: 1rem;
+}
+
+/* Grayscale variables */
+:root {
+  --color-neutral-50: hsl(0 0% 98%);
+  --color-neutral-100: hsl(0 0% 96%);
+  --color-neutral-200: hsl(0 0% 90%);
+  --color-neutral-300: hsl(0 0% 80%);
+  --color-neutral-400: hsl(0 0% 64%);
+  --color-neutral-500: hsl(0 0% 45%);
+  --color-neutral-600: hsl(0 0% 32%);
+  --color-neutral-700: hsl(0 0% 25%);
+  --color-neutral-800: hsl(0 0% 15%);
+  --color-neutral-900: hsl(0 0% 9%);
+  --color-neutral-950: hsl(0 0% 4%);
+}
+
+/* Custom Animation Utility Classes */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  opacity: 0;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  font-family: var(--font-sans);
+  color: #fff;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+/* Two-tier Liquid Glass Component Styles */
+.liquid-glass {
+  background: rgba(255,255,255,0.01);
+  background-blend-mode: luminosity;
+  backdrop-filter: blur(4px);
+  border: none;
+  box-shadow: inset 0 1px 1px rgba(255,255,255,0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.liquid-glass::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1.4px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.45) 0%, rgba(255,255,255,0.15) 20%, transparent 40%, transparent 60%, rgba(255,255,255,0.15) 80%, rgba(255,255,255,0.45) 100%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.liquid-glass-strong {
+  background: rgba(255,255,255,0.01);
+  background-blend-mode: luminosity;
+  backdrop-filter: blur(50px);
+  border: none;
+  box-shadow: 4px 4px 4px rgba(0,0,0,0.05), inset 0 1px 1px rgba(255,255,255,0.15);
+  position: relative;
+  overflow: hidden;
+}
+
+.liquid-glass-strong::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1.4px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0.2) 20%, transparent 40%, transparent 60%, rgba(255,255,255,0.2) 80%, rgba(255,255,255,0.5) 100%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
