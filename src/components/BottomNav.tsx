@@ -38,7 +38,7 @@ export function BottomNav() {
           <div className="flex flex-col text-left">
             <span className="font-sans font-medium text-xs text-white leading-none mb-0.5">bloom</span>
             <span className="font-mono text-[9px] text-white/50 uppercase tracking-widest flex items-center gap-1">
-              <Sparkles className="w-2.5 h-2.5 text-white/80 animate-pulse" /> neural growth
+              <Sparkles className="w-2.5 h-2.5 text-white/80 animate-pulse" /> croissance neurale
             </span>
           </div>
         </div>
@@ -47,7 +47,7 @@ export function BottomNav() {
           onClick={handleCTA}
           className="py-2.5 px-5 rounded-full bg-white text-black font-sans font-medium text-xs hover:bg-white/90 transition-colors cursor-pointer select-none"
         >
-          Explore Now
+          Explorer
         </button>
       </div>
     </div>

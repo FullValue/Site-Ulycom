@@ -64,7 +64,7 @@ export default function App() {
             src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260315_073750_51473149-4350-4920-ae24-c8214286f323.mp4" 
             type="video/mp4" 
           />
-          Your browser does not support the video tag.
+          Votre navigateur ne supporte pas la lecture vidéo.
         </video>
         {/* Soft dark vignetting layer */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/80 pointer-events-none" />
@@ -105,18 +105,18 @@ export default function App() {
             {isMenuOpen && (
               <div className="absolute top-20 left-6 right-6 z-50 rounded-2xl liquid-glass p-6 text-left animate-fade-in-up">
                 <p className="text-xs font-mono tracking-widest text-[#9c9c9c] uppercase mb-4">
-                  — Navigate Bloom AI Ecosystem
+                  — Explorez l'écosystème Bloom AI
                 </p>
                 <div className="grid grid-cols-2 gap-4">
                   <div className="space-y-2">
-                    <a href="#services" onClick={() => setIsMenuOpen(false)} className="block text-sm text-white/80 hover:text-white transition-colors">Artistic Gallery & Capabilities</a>
-                    <a href="#work" onClick={() => setIsMenuOpen(false)} className="block text-sm text-white/80 hover:text-white transition-colors">AI Generative Sandbox</a>
-                    <a href="#process" onClick={() => setIsMenuOpen(false)} className="block text-sm text-white/80 hover:text-white transition-colors">3D Structural Sculptures</a>
+                    <a href="#services" onClick={() => setIsMenuOpen(false)} className="block text-sm text-white/80 hover:text-white transition-colors">Galerie artistique & capacités</a>
+                    <a href="#work" onClick={() => setIsMenuOpen(false)} className="block text-sm text-white/80 hover:text-white transition-colors">Bac à sable génératif IA</a>
+                    <a href="#process" onClick={() => setIsMenuOpen(false)} className="block text-sm text-white/80 hover:text-white transition-colors">Sculptures structurelles 3D</a>
                   </div>
                   <div className="space-y-2">
-                    <a href="#pricing" onClick={() => setIsMenuOpen(false)} className="block text-sm text-white/80 hover:text-white transition-colors">Growth Documentation</a>
-                    <a href="#services" onClick={() => setIsMenuOpen(false)} className="block text-sm text-white/80 hover:text-white transition-colors">Neural Processing Pipeline</a>
-                    <a href="#pricing" onClick={() => setIsMenuOpen(false)} className="block text-sm text-white/80 hover:text-white transition-colors">Community Sandbox Contact</a>
+                    <a href="#pricing" onClick={() => setIsMenuOpen(false)} className="block text-sm text-white/80 hover:text-white transition-colors">Documentation de croissance</a>
+                    <a href="#services" onClick={() => setIsMenuOpen(false)} className="block text-sm text-white/80 hover:text-white transition-colors">Pipeline de traitement neuronal</a>
+                    <a href="#pricing" onClick={() => setIsMenuOpen(false)} className="block text-sm text-white/80 hover:text-white transition-colors">Contact communautaire</a>
                   </div>
                 </div>
               </div>
@@ -132,13 +132,13 @@ export default function App() {
 
               {/* Bloom Heading Section */}
               <h1 className="text-5xl sm:text-6xl lg:text-7xl font-sans font-medium tracking-[-0.05em] text-white leading-[1.05] mb-8">
-                Innovating the <br />
-                <span className="font-serif italic font-normal text-white/80">spirit of bloom AI</span>
+                Réinventer l'<br />
+                <span className="font-serif italic font-normal text-white/80">esprit de bloom AI</span>
               </h1>
 
               {/* Three floating badge pills */}
               <div className="flex flex-wrap gap-2.5 mb-10">
-                {["Artistic Gallery", "AI Generation", "3D Structures"].map((pill, idx) => (
+                {["Galerie artistique", "Génération IA", "Structures 3D"].map((pill, idx) => (
                   <div 
                     key={idx}
                     className="px-4 py-2 text-xs font-sans text-white/80 rounded-full liquid-glass hover:scale-105 transition-transform"
@@ -158,7 +158,7 @@ export default function App() {
                 }}
                 className="inline-flex items-center gap-3 pl-6 pr-2 py-2.5 rounded-full liquid-glass-strong hover:scale-105 active:scale-95 transition-all text-sm font-medium text-white cursor-pointer select-none"
               >
-                <span>Explore Now</span>
+                <span>Explorer</span>
                 <div className="w-7 h-7 rounded-full bg-white/15 flex items-center justify-center hover:bg-white/20 transition-colors">
                   <Download className="w-4 h-4 text-white" />
                 </div>
@@ -169,11 +169,11 @@ export default function App() {
             {/* Bottom Visionary Quote footer block */}
             <div className="mt-auto pt-6 border-t border-white/5 flex flex-col gap-3">
               <p className="text-[10px] tracking-widest uppercase text-white/50 font-mono">
-                VISIONARY DESIGN
+                DESIGN VISIONNAIRE
               </p>
               
               <p className="text-lg md:text-xl text-white/90 leading-relaxed font-sans">
-                “We imagined a <span className="font-serif italic text-white/80">realm</span> with no <span className="font-serif italic text-white/80">ending</span>.”
+                “Nous avons imaginé un <span className="font-serif italic text-white/80">royaume</span> sans <span className="font-serif italic text-white/80">fin</span>.”
               </p>
 
               {/* Author Credit */}
@@ -202,7 +202,7 @@ export default function App() {
                     target="_blank" 
                     rel="noreferrer" 
                     className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-white hover:text-white/80 hover:scale-105 transition-all"
-                    aria-label="Twitter Profile"
+                    aria-label="Profil Twitter"
                   >
                     <Twitter className="w-4 h-4" />
                   </a>
@@ -211,7 +211,7 @@ export default function App() {
                     target="_blank" 
                     rel="noreferrer" 
                     className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-white hover:text-white/80 hover:scale-105 transition-all"
-                    aria-label="LinkedIn Profile"
+                    aria-label="Profil LinkedIn"
                   >
                     <Linkedin className="w-4 h-4" />
                   </a>
@@ -220,7 +220,7 @@ export default function App() {
                     target="_blank" 
                     rel="noreferrer" 
                     className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-white hover:text-white/80 hover:scale-105 transition-all"
-                    aria-label="Instagram Profile"
+                    aria-label="Profil Instagram"
                   >
                     <Instagram className="w-4 h-4" />
                   </a>
@@ -246,13 +246,13 @@ export default function App() {
             <div className="w-full flex justify-end">
               <div className="w-56 p-5 rounded-2xl liquid-glass text-left flex flex-col gap-2 hover:scale-[1.02] transition-transform">
                 <h4 className="text-xs font-mono uppercase tracking-wider text-white/50">
-                  — SANDBOX
+                  — BAC À SABLE
                 </h4>
                 <p className="text-sm font-medium text-white">
-                  Enter our ecosystem
+                  Entrez dans notre écosystème
                 </p>
                 <p className="text-xs text-white/70 leading-relaxed">
-                  Connect your workspace parameters to feed the autonomous neural growth engine.
+                  Connectez les paramètres de votre espace de travail pour alimenter le moteur de croissance neuronale autonome.
                 </p>
               </div>
             </div>
@@ -275,9 +275,9 @@ export default function App() {
                     <Wand2 className="w-4 h-4" />
                   </div>
                   <div>
-                    <h5 className="font-sans font-medium text-sm text-white">Processing</h5>
+                    <h5 className="font-sans font-medium text-sm text-white">Traitement</h5>
                     <p className="text-[11px] text-white/60 mt-1 leading-relaxed">
-                      Analyzing bio-geometry metrics with zero latency.
+                      Analyse des métriques de bio-géométrie sans aucune latence.
                     </p>
                   </div>
                 </div>
@@ -294,9 +294,9 @@ export default function App() {
                     <BookOpen className="w-4 h-4" />
                   </div>
                   <div>
-                    <h5 className="font-sans font-medium text-sm text-white">Growth Archive</h5>
+                    <h5 className="font-sans font-medium text-sm text-white">Archive de croissance</h5>
                     <p className="text-[11px] text-white/60 mt-1 leading-relaxed">
-                      Historic logs of digital floral architecture drafts.
+                      Journaux historiques des ébauches d'architecture florale numérique.
                     </p>
                   </div>
                 </div>
@@ -316,7 +316,7 @@ export default function App() {
                 <div className="w-24 h-16 rounded-xl overflow-hidden bg-white/5 flex-shrink-0 relative border border-white/10">
                   <img 
                     src="https://picsum.photos/seed/bloom-plant/300/200"
-                    alt="Advanced Plant Sculpting preview"
+                    alt="Aperçu Sculpture végétale avancée"
                     referrerPolicy="no-referrer"
                     className="w-full h-full object-cover"
                   />
@@ -326,10 +326,10 @@ export default function App() {
                 {/* Title & Description details */}
                 <div className="flex-1">
                   <h5 className="font-sans font-medium text-xs text-white">
-                    Advanced Plant Sculpting
+                    Sculpture végétale avancée
                   </h5>
                   <p className="text-[10px] text-white/60 mt-0.5 leading-relaxed">
-                    Generative neural nodes shaping custom botanical designs.
+                    Des nœuds neuronaux génératifs façonnent des designs botaniques sur mesure.
                   </p>
                 </div>
 

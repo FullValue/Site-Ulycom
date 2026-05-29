@@ -114,7 +114,7 @@ export function PartnerCTA() {
             <div className="w-full h-full rounded-lg overflow-hidden border border-white/20 shadow-2xl bg-black relative">
               <img
                 src={v.image}
-                alt="Studio Sculpture"
+                alt="Sculpture de studio"
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-cover grayscale brightness-90"
               />
@@ -154,7 +154,7 @@ export function PartnerCTA() {
               }}
               className="px-8 py-4 text-xs tracking-widest uppercase font-mono rounded-full liquid-glass hover:scale-105 active:scale-95 transition-all text-white cursor-pointer"
             >
-              NOS CAPABILITÉS
+              NOS CAPACITÉS
             </button>
           </div>
         </div>

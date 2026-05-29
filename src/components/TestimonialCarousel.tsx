@@ -12,7 +12,7 @@ const TESTIMONIALS: Testimonial[] = [
   },
   {
     name: "Sonia El Khoury",
-    role: "Cofondatrice & Creative Lead",
+    role: "Cofondatrice & Directrice Créative",
     company: "Onyx Design Studio",
     text: "Une simplicité déroutante. On connecte notre cahier des charges, et l'IA sculpte des structures botaniques en verre translucide qui ont séduit tous nos investisseurs.",
     avatar: "https://picsum.photos/seed/sonia_b/120/120",
@@ -26,7 +26,7 @@ const TESTIMONIALS: Testimonial[] = [
   },
   {
     name: "Emma Bodin",
-    role: "VP Experience",
+    role: "VP Expérience",
     company: "Hôtel L'Eden",
     text: "Nous cherchions une installation immersive hybride qui mélange nature réelle et technologie interactive. Bloom s'est imposé comme l'excellence absolue sur le marché.",
     avatar: "https://picsum.photos/seed/emma_b/120/120",

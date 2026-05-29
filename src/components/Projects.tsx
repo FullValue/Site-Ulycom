@@ -74,7 +74,7 @@ function ProjectRow({ project, index }: { project: Project; index: number; key?:
         
         {/* Absolute floating project badge */}
         <div className="absolute top-6 left-6 font-mono text-[9px] text-white bg-black/60 backdrop-blur-md px-4 py-2 rounded-full uppercase tracking-widest border border-white/10">
-          PROJECT {project.id} — AI & BIO-DESIGN
+          PROJET {project.id} — IA & BIO-DESIGN
         </div>
       </div>
 
@@ -96,9 +96,9 @@ function ProjectRow({ project, index }: { project: Project; index: number; key?:
         </p>
 
         <div className="flex items-center gap-6 font-mono text-[10px] text-white/40 border-t border-white/10 pt-4">
-          <span>SPONSOR — {project.client}</span>
+          <span>PARTENAIRE — {project.client}</span>
           <span>●</span>
-          <span>BIOPHILE DESIGN SYMPOSIUM</span>
+          <span>SYMPOSIUM DE DESIGN BIOPHILE</span>
         </div>
       </div>
     </div>

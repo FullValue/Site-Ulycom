@@ -21,8 +21,8 @@ const STEPS: (ProcessStep & { icon: React.ComponentType<{ className?: string }> 
   {
     num: "03",
     icon: Leaf,
-    title: "Algorithmique ",
-    serifAccent: "Grow",
+    title: "Floraison ",
+    serifAccent: "Algorithmique",
     description: "Éclosion procédurale des structures modélisées et optimisation des micro-détails sous contraintes mécaniques.",
   },
   {
@@ -65,7 +65,7 @@ export function Process() {
                 <div>
                   <div className="flex justify-between items-start mb-8">
                     <span className="font-mono text-xs font-semibold text-white/40 bg-white/5 px-3 py-1 rounded-full border border-white/10">
-                      Step {step.num}
+                      Étape {step.num}
                     </span>
                     <div className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white/70">
                       <StepIcon className="w-5 h-5" />

@@ -75,7 +75,7 @@ export function Footer() {
           <div className="flex items-center gap-4">
             <span>PARIS, FR</span>
             <span>●</span>
-            <span>BIOPHILIC AGENT WORKSPACE</span>
+            <span>ATELIER D'AGENTS BIOPHILES</span>
           </div>
         </div>
       </div>
